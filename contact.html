@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Name: Rachel Leite
+Date Created: 9/21/2018
+Most Recent Revision: 9/25/2018
+-->
+
+<head>
+<title> Contact Us </title>
+
+<style>
+
+  nav
+{ text-align: left; }
+
+  body
+{ background-color: azure;
+  color: darkgreen;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif; }
+
+  div
+  { text-align: left; }
+
+  p
+  { text-decoration: none; }
+
+  .warning p
+  { font-weight: bold;
+  color: darkgreen;
+  font-size: .90em; }
+
+  div p
+  { text-indent: 53px; }
+
+  label
+  { font-family: Arial, Helvetica, sans-serif;
+    color: darkgreen;
+    text-decoration: none; }
+
+  footer
+  { text-align: center; }
+
+  footer p
+  { color: purple; }
+
+  textarea
+  { vertical-align: top; }
+
+</style>
+
+<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+<div>
+  <font size="4"> </font>
+  Contact Us
+</div>
+<hr color="lightgray" />
+
+  <h1> Bombas' Burgs </h1>
+  </header>
+
+<nav>
+<hr/>
+<a href="index.html"> Home </a>
+<a href="menu.html"> Menu </a>
+<a href="contact.html"> Contact Us </a>
+<hr/>
+</nav>
+
+<form action="submit.html" method="POST" id="form" name="form">
+
+<div class="warning">
+
+<p class="warning"> *Name is Required* </p>
+  <label for="name"> Name: </label>
+  <input type="textbox" name="name" required />
+
+<p class="warning"> *Email is Required* </p>
+  <label for="email"> Email: </label>
+  <input type="textbox" name="email" required/>
+
+<p class="warning"> *Phone Number is Required* </p>
+  <label for="phone"> Phone: </label>
+  <input type="textbox" name="phone" required />
+
+</div>
+
+<p> Reason for Inquiry:
+<select name="inquiry" >
+  <option value="default" selected > Catering
+    <br/>
+    </option>
+  <option value="private" > Private Party
+    <br/>
+    </option>
+  <option value="feedback" > Feedback
+    <br/>
+    </option>
+  <option value="other" > Other
+    <br/>
+    </option>
+</select>
+    <br/>
+</p>
+
+<p>
+Additional Information:
+<textarea name="info" cols="25" rows="6">
+</textarea>
+</p>
+
+<p>
+Have you been to the restaurant?
+<input type="radio" name="answer" value="NO" checked /> No
+<input type="radio" name="answer" value="YES" /> Yes
+</p>
+
+<p>
+Best days to contact you:
+<input type="checkbox" name="days" value="monday" /> M
+<input type="checkbox" name="days" value="tuesday" /> T
+<input type="checkbox" name="days" value="wednesday" /> W
+<input type="checkbox" name="days" value="thursday" /> Th
+<input type="checkbox" name="days" value="friday" /> F
+</p>
+
+<p>
+<button> Send Request </button>
+</p>
+<br/>
+<hr/>
+
+<footer>
+<p>
+  4271 West Corridor Street, Los Angeles, CA, 90210
+</p>
+<p>
+  213-687-BOMB
+</p>
+</footer>
+
+</body>
+</html>
